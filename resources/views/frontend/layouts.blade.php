@@ -1,7 +1,7 @@
 @php
-    function setting($slug){
-        return App\Setting::where('slug',$slug)->get()->first()->description;
-    }
+function setting($slug){
+return App\Setting::where('slug',$slug)->get()->first()->description;
+}
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +20,7 @@
     <!-- Title -->
     <title>{{setting('title')}} | Home</title>
     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{asset('backend/img/favicon.png')}}">
     <!-- Core Stylesheet -->
     <link href="{{asset('frontend/style.css')}}" rel="stylesheet">
     <!-- Responsive CSS -->
@@ -31,18 +32,18 @@
 
     @include('frontend.component.header')
     @if (request()->route()->getName() == 'index.index')
-        @include('frontend.component.slideshow')
+    @include('frontend.component.slideshow')
 
-        @include('frontend.component.service')
+    @include('frontend.component.service')
 
-        @include('frontend.component.promo')
+    @include('frontend.component.promo')
 
-        @include('frontend.component.portofolio')
+    @include('frontend.component.portofolio')
 
-        @include('frontend.component.contact')
+    @include('frontend.component.contact')
 
     @else
-        @include('frontend.component.breadcrumb')
+    @include('frontend.component.breadcrumb')
 
     @endif
 

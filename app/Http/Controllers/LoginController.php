@@ -107,14 +107,14 @@ class LoginController extends Controller
                 [
                     "label" => "Transaksi",
                     'backgroundColor' => "rgba(78, 115, 223, 0.05)",
-                    'borderColor' => "#3bafbf",
+                    'borderColor' => "#df4e4ef7",
                     "pointHoverRadius" => "3",
                     "pointHitRadius" => "10",
                     "pointBorderWidth" => "2",
-                    "pointBorderColor" => "#3bafbf",
-                    "pointBackgroundColor" => "#3bafbf",
-                    "pointHoverBackgroundColor" => "#3bafbf",
-                    "pointHoverBorderColor" => "#3bafbf",
+                    "pointBorderColor" => "#df4e4ef7",
+                    "pointBackgroundColor" => "#df4e4ef7",
+                    "pointHoverBackgroundColor" => "#df4e4ef7",
+                    "pointHoverBorderColor" => "#df4e4ef7",
                     'data' => $transaction_data,
                     // 'data' => [1,2,3,4,5,6,7,8,9,10,11,12]
                 ]
