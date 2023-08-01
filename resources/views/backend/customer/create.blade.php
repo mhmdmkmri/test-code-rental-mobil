@@ -10,6 +10,7 @@
         <div class="card-body">
             <form action="{{route('customer.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="user_id" id="" value="{{$user->id}}">
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
